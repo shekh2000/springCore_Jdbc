@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean class="com.springcore.collections.Emp" name="emp1">
+		<property name="name" value="deepak" />
+		<property name="phones">
+			<list>
+				<value>789</value>
+				<value>7891</value>
+				<value>7892</value>
+				<null/>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>Jaipur</value>
+				<value>delhi</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java" value="2 months" />
+				<entry key="c++" value="2 months" />
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="name">deepak</prop>
+				<prop key="channelName">iiith</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
